@@ -51,7 +51,7 @@ func (bot *TodayBot) ParseAndExecuteUpdate(update tgbotapi.Update) {
 			bot.API.Send(msg)
 
 		case "/today":
-			text := "Today is " + time.Now().Format("Monday, January 3, 2006\n")
+			text := "Today is " + time.Now().Format("Monday, January 2, 2006\n")
 			text += "Today's Holidays:\n"
 
 			fp := gofeed.NewParser()
